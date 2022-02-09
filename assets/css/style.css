@@ -1,0 +1,316 @@
+/* reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+.text-opacity {
+    opacity: 0.6;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.white {
+    color: #ffffff !important;
+}
+
+.black {
+    color: #000000 !important;
+}
+
+.btn {
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    font-size: 15px;
+    border-style: none;
+    line-height: 1.5;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #cccccc !important;
+    color: #000000 !important;
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+.col {
+    float: left !important;
+}
+
+.col-third {
+    width: 33.33333% !important;
+}
+
+.col-half {
+    width: 50% !important;
+}
+
+.padding-tb-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+}
+
+.padding-lr-8 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.padding-8-16 {
+    padding: 8px 16px !important;
+}
+
+.padding-12-24 {
+    padding: 12px 24px !important;
+}
+
+.padding-15 {
+    padding: 15px !important;
+}
+
+/* Main */
+#header {
+    height: 46.5px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    height: 100%;
+    display: inline-block;
+    list-style: none;
+}
+
+#nav > li {
+    float: left;
+    height: inherit;
+    position: relative;
+}
+
+#nav li:hover a {
+    color: #000000 !important; 
+}
+
+#nav li:hover {
+    background-color: #cccccc !important;
+    cursor: pointer !important;
+}
+
+#nav li a {
+    text-decoration: none;
+    display: block;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #000000;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(38, 39, 39, 0.527);
+    list-style: none;
+}
+
+.item {
+    display: block;
+    line-height: 18.4px;
+}
+
+#header .search-button {
+    float: right;
+    height: inherit;
+}
+
+#header .search-button:hover {
+    background-color: #ff0000 !important;
+    cursor: pointer !important;
+}
+
+#slider {
+    width: 100%;
+    padding-top: 50%;
+    margin-top: 46.5px;
+    position: relative;
+    background: url(/html_test_band/assets/images/slider_show/ny.jpg) center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 32px;
+}
+
+#slider .text-header {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px;
+    line-height: 36px;
+}
+
+#content .content-section {
+    max-width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+#content .header {
+    font-size: 30px !important;
+    text-align: center;
+    line-height: 45px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+#content .sub-header {
+    text-align: center;
+    font-style: italic;
+}
+
+#content .about {
+    text-align: justify;
+}
+
+#content .member {
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+    margin-top: 47px;
+}
+
+#content .member-avatar {
+    border-radius: 4px;
+    width: 153.59px;
+}
+
+.tour-section {
+    background-color: #000000;
+}
+
+.ticket-section {
+    background-color: #ffffff;
+    margin-top: 18.4px;
+    list-style: none;
+}
+
+.ticket-section li {
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.ticket-section .sold-out {
+    background-color: #f44336;
+    padding: 4px 8px;
+    margin-left: 16px;
+}
+
+.ticket-section .quantity {
+    float: right;
+    border-radius: 50%;
+    background-color: #000000;
+    padding: 0 8px;
+    margin-right: 16px;
+}
+
+.book-section {
+    padding: 32px 8px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.book-section .place {
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.book-section .place-img {
+    display: block;
+}
+
+.book-section .place-details {
+    background-color: #ffffff;
+    padding: 0.15px 16px;
+}
+
+.book-section .details {
+    margin: 15px 0;
+}
+
+.book-section .place-img:hover {
+    opacity: 0.6;
+}
+
+.contact-details {
+    font-size: 18px;
+}
+
+.icon-contact {
+    width: 30px;
+    height: 20px;
+}
+
+.name-email {
+    margin: 0 -8px 8px -8px;
+}
+
+.input {
+    padding: 8px;
+    border: #cccccc solid 1px;
+    font-size: 15px;
+}
+
+.contact-section .send-btn {
+    float: right;
+    margin-top: 16px;
+}
+
+#footer {
+    padding: 64px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#footer .social-icon {
+    width: 24px;
+    font-size: 24px;
+}
+
+#footer .social-icon:hover {
+    opacity: 0.4;
+    cursor: default;
+}
