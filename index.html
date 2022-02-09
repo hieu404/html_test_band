@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The band</title>
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/modal.css">
         <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
     </head>
     <body>
@@ -41,8 +42,8 @@
                 <!-- end search button -->
             </div>
 
-            <div id="slider">
-                <div class="text-content white">
+            <div id="slider" class="w-full">
+                <div class="text-content white w-full">
                     <h3 class="text-header">New York</h3>
                     <p class="padding-15">
                         <b>The atmosphere in New York is lorem ipsum.</b>
@@ -164,6 +165,32 @@
                 <a href="#"><i class="fab fa-linkedin black text-opacity social-icon"></i></a>
 
                 <p class="text-opacity" style="margin-top: 15px; margin-bottom: 15px;">Power by <a class="black" href="https://www.w3schools.com/w3css/default.asp" style="opacity: 0.8;">w3.css</a></p>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="main-modal">
+                <header class="modal-header bg-green white">
+                    <div class="modal-close btn bg-green">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <h2 class="header">
+                        <i class="fas fa-suitcase"></i> Tickets
+                    </h2>
+                </header>
+
+                <div class="modal-body">
+                    <p class="mg-tb-15"><label for=""><i class="fas fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+                    <input class="input w-full" type="text" placeholder="How many?">
+
+                    <p class="mg-tb-15"><label for=""><i class="fas fa-user"></i>  Send To</label></p>
+                    <input class="input w-full" type="email" placeholder="Enter email">
+                    
+                    <button class="btn modal-btn white w-full bg-green">PAY <i class="fas fa-check"></i></button>
+
+                    <button class="btn modal-btn padding-8-16 white close-btn">Close <i class="fas fa-times"></i></button>
+                    <p class="help">Need <a class="link-help" href="#">help?</a></p>
+                </div>
             </div>
         </div>
     </body>

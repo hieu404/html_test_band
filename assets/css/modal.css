@@ -1,0 +1,77 @@
+.bg-green {
+    background-color: #009688 !important;
+}
+
+.mg-tb-15 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.main-modal { 
+    width: 900px;
+    background-color: #fff;
+}
+
+.modal-header {
+    padding: 32px 16px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 17px;
+    padding: 16px;
+    height: 52px;
+    margin: 0;
+}
+
+.modal-header .header {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-body {
+    padding: 0 16px;
+}
+
+.modal-btn {
+    padding: 16px;
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.close-btn {
+    background-color: #f44336 !important;
+}
+
+.help {
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.help .link-help {
+    color: #2196F3!important;
+}
