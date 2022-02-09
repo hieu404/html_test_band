@@ -20,6 +20,10 @@
     display: none;
 }
 
+.display-modal {
+    display: flex;
+}
+
 .main-modal { 
     width: 900px;
     background-color: #fff;

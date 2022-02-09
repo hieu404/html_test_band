@@ -93,7 +93,7 @@
                                     <p class="details"><b>New York</b></p>
                                     <p class="details text-opacity">Fri 27 Nov 2016</p>
                                     <p class="details">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="btn">Buy Tickets</button>
+                                    <button class="btn js-buy-btn">Buy Tickets</button>
                                 </div>
                             </div>
 
@@ -103,7 +103,7 @@
                                     <p class="details"><b>Paris</b></p>
                                     <p class="details text-opacity">Sat 28 Nov 2016</p>
                                     <p class="details">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="btn">Buy Tickets</button>
+                                    <button class="btn js-buy-btn">Buy Tickets</button>
                                 </div>
                             </div>
 
@@ -113,7 +113,7 @@
                                     <p class="details"><b>San Francisco</b></p>
                                     <p class="details text-opacity">Sun 29 Nov 2016</p>
                                     <p class="details">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="btn">Buy Tickets</button>
+                                    <button class="btn js-buy-btn">Buy Tickets</button>
                                 </div>
                             </div>
                         </div>
@@ -168,10 +168,10 @@
             </div>
         </div>
 
-        <div class="modal">
+        <div class="modal js-modal">
             <div class="main-modal">
                 <header class="modal-header bg-green white">
-                    <div class="modal-close btn bg-green">
+                    <div class="modal-close js-modal-close btn bg-green">
                         <i class="fas fa-times"></i>
                     </div>
                     <h2 class="header">
@@ -188,10 +188,32 @@
                     
                     <button class="btn modal-btn white w-full bg-green">PAY <i class="fas fa-check"></i></button>
 
-                    <button class="btn modal-btn padding-8-16 white close-btn">Close <i class="fas fa-times"></i></button>
+                    <button class="btn modal-btn padding-8-16 white close-btn js-modal-close">Close <i class="fas fa-times"></i></button>
                     <p class="help">Need <a class="link-help" href="#">help?</a></p>
                 </div>
             </div>
         </div>
+        
+        <script>
+            const buyBtns = document.querySelectorAll('.js-buy-btn')
+            const modal = document.querySelector('.js-modal')
+            const closeBtns = document.querySelectorAll('.js-modal-close')
+
+            function showTicketModal() {
+                modal.classList.add('display-modal')
+            }
+
+            function hiddenTicketModal() {
+                modal.classList.remove('display-modal')
+            }
+
+            for (const buyBtn of buyBtns) {
+                buyBtn.addEventListener('click', showTicketModal)
+            }
+
+            for (const closeBtn of closeBtns) {
+                closeBtn.addEventListener('click', hiddenTicketModal)
+            }
+        </script>
     </body>
 </html>
