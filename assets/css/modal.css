@@ -27,6 +27,8 @@
 .main-modal { 
     width: 900px;
     background-color: #fff;
+    position: relative;
+    animation: modalAnimation ease 0.5s;
 }
 
 .modal-header {
@@ -78,4 +80,15 @@
 
 .help .link-help {
     color: #2196F3!important;
+}
+
+@keyframes modalAnimation {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
