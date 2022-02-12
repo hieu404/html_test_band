@@ -31,7 +31,6 @@ html {
 }
 
 .btn {
-    padding: 8px 16px;
     margin-bottom: 16px;
     background-color: #000000 !important;
     color: #ffffff !important;
@@ -40,14 +39,12 @@ html {
     line-height: 1.5;
 }
 
-.btn:hover {
-    cursor: pointer;
-    background-color: #cccccc !important;
-    color: #000000 !important;
-}
-
 .w-full {
     width: 100% !important;
+}
+
+.h-full {
+    height: 100% !important;
 }
 
 .col {
@@ -111,8 +108,12 @@ html {
     z-index: 1;
 }
 
+#header .search-button {
+    float: right;
+    height: inherit;
+}
+
 #nav {
-    height: 100%;
     display: inline-block;
     list-style: none;
 }
@@ -123,18 +124,10 @@ html {
     position: relative;
 }
 
-#nav li:hover a {
-    color: #000000 !important; 
-}
-
-#nav li:hover {
-    background-color: #cccccc !important;
-    cursor: pointer !important;
-}
-
 #nav li a {
     text-decoration: none;
     display: block;
+    margin: 0;
 }
 
 #nav > li > a {
@@ -150,11 +143,14 @@ html {
     position: absolute;
     top: 100%;
     left: 0;
-    color: #000000;
     background-color: #ffffff;
     min-width: 160px;
     box-shadow: 0 0 10px rgba(38, 39, 39, 0.527);
     list-style: none;
+}
+
+#nav .subnav a {
+    color: #000000;
 }
 
 .item {
@@ -162,21 +158,15 @@ html {
     line-height: 18.4px;
 }
 
-#header .search-button {
-    float: right;
-    height: inherit;
-}
-
-#header .search-button:hover {
-    background-color: #ff0000 !important;
-    cursor: pointer !important;
+#mobile-menu {
+    display: none;
 }
 
 #slider {
     padding-top: 50%;
     margin-top: 46.5px;
     position: relative;
-    background: url(/html_test_band/assets/images/slider_show/ny.jpg) center / cover no-repeat;
+    background: url(../images/slider_show/ny.jpg) center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -184,6 +174,10 @@ html {
     bottom: 0;
     text-align: center;
     padding: 32px;
+}
+
+#slider .text {
+    text-shadow: 0 0 1px #000000;
 }
 
 #slider .text-header {
@@ -194,7 +188,8 @@ html {
 }
 
 #content .content-section {
-    max-width: 800px;
+    width: 800px;
+    max-width: 100%;
     padding: 64px 16px;
     margin-left: auto;
     margin-right: auto;
@@ -218,16 +213,12 @@ html {
 }
 
 #content .member {
-    text-align: center;
-}
-
-#content .member-name {
-    margin-top: 47px;
+    text-align: center !important;
 }
 
 #content .member-avatar {
     border-radius: 4px;
-    width: 153.59px;
+    width: 153.5px;
 }
 
 .tour-section {
@@ -281,10 +272,6 @@ html {
 
 .book-section .details {
     margin: 15px 0;
-}
-
-.book-section .place-img:hover {
-    opacity: 0.6;
 }
 
 .contact-details {

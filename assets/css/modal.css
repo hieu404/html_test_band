@@ -16,7 +16,7 @@
 }
 
 .main-modal { 
-    max-width: 900px;
+    width: 900px;
     background-color: #fff;
     position: relative;
     animation: modalAnimation ease 0.5s;
@@ -34,7 +34,9 @@
     font-size: 17px;
     padding: 16px;
     height: 52px;
+    width: 52px;
     margin: 0;
+    text-align: center;
 }
 
 .modal-header .header {
@@ -52,7 +54,6 @@
 
 .modal-btn {
     padding: 16px;
-    border: none;
     margin-top: 16px;
     margin-bottom: 16px;
     font-size: 15px;
